@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #808080;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*header styles*/
+
+.header {
+  width: 100%;
+  height: 15vh;
+}
+
+.header nav { /* aca va flex por que el nav es el contenedor de su item que es la imagen */
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.header nav img{
+  width: 70px;
+  height: 70px;
+}
+
+
+/*Hero style*/
+.hero_container { /* este es el contenedor principál, el que contiene a hero-info (que es su hijo) por eso el position relative*/
+  position: relative;
+}
+
+.hero_background {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero_background img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero_info {
+  position: absolute; /* esto coloca al elemento encima de todo pero todoooo!!! respecto al que tiene posicion relativa */
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero_info-foto {
+  display: flex;
+  align-items: center;
+}
+
+.hero_info-foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.hero_info-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+.hero_info-info .info-header {
+  margin-top: 45px;
+}
+
+.hero_info-info .title {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.hero_info-info .mail {
+  font-size: 20px;
+  font-weight: bold;
+  color: #817bdd;
+}
+
+.hero_info-info .paragraph {
+  margin-bottom: 45px;
+  color: #ffffff;
+}
+
+.hero_info-info .paragraph span {
+  color: #817bdd;
+}
+
+/* informacion practica */
+.section_container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.section_container-info {
+  width: 70%;
+  height: auto;
+  background: #483D8B;
+  border-radius: 8px;
+  margin: 50px 0;
+}
+
+.section_title {
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
+  margin: 20px 20px;
+}
+
+.section_stack ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 50px;
+}
+
+/* Footer */
+
+.footer-container ul {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background: #ffffff;
+  margin-top: 150px;
+}
+
+.footer-container ul li:nth-child(1) {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.footer-container ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-container ul li {
+  margin-left: 10px;
+}
